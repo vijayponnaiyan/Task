@@ -1,0 +1,25 @@
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slider {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide-track {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 250px;
+    height: 100px;
+  }
+  
