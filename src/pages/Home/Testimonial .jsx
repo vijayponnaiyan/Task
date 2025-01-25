@@ -5,7 +5,6 @@ import manthree from '../../images/Testimonial/T-3.webp';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import CustomerLogos from '../../pages/Home/CustomerLogos';
 
-
 export default function TestimonialCarousel() {
     const testimonials = [
         {
@@ -61,17 +60,17 @@ export default function TestimonialCarousel() {
                     </h1>
 
                     {/* Carousel Section */}
-                    <div className="flex justify-center items-center pt-10 space-x-4">
+                    <div className="flex flex-col sm:flex-row justify-center items-center pt-10 space-x-4 sm:space-x-8">
                         {/* Left Button */}
                         <button
                             onClick={handlePrev}
-                            className="p-[20px] bg-white shadow-lg rounded-md hover:bg-gray-200"
+                            className="p-4 bg-white shadow-lg rounded-md hover:bg-gray-200 transition mb-4 sm:mb-0"
                         >
                             <FaChevronLeft />
                         </button>
 
                         {/* Testimonial Box */}
-                        <div className="bg-white  shadow-lg rounded-xl flex flex-col sm:flex-row items-center sm:items-start w-full max-w-4xl overflow-hidden transition-all duration-1500 ease-in-out">
+                        <div className="bg-white shadow-lg rounded-xl flex flex-col sm:flex-row items-center sm:items-start w-full max-w-4xl overflow-hidden transition-all duration-1500 ease-in-out">
                             {/* Image Section */}
                             <div className="w-full sm:w-1/2 h-64 sm:h-80 flex items-center justify-center">
                                 <img
@@ -81,14 +80,12 @@ export default function TestimonialCarousel() {
                                 />
                             </div>
 
-
                             {/* Text Section */}
-                            <div className="p-[33px] pt-16  pl-10  text-center sm:text-left">
+                            <div className="p-6 pt-16 pl-10 text-center sm:text-left">
                                 <p className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
                                     "{testimonials[currentIndex].quote}"
                                 </p>
                                 <hr className="w-auto my-4" />
-
                                 <p className="text-lg font-semibold text-gray-900">
                                     {testimonials[currentIndex].name}
                                 </p>
@@ -102,14 +99,15 @@ export default function TestimonialCarousel() {
                         {/* Right Button */}
                         <button
                             onClick={handleNext}
-                            className="p-[20px] bg-white shadow-lg rounded-md hover:bg-gray-200"
+                            className="p-4 bg-white shadow-lg rounded-md hover:bg-gray-200 transition mb-4 sm:mb-0"
                         >
                             <FaChevronRight />
                         </button>
                     </div>
                 </div>
-                <div className=' '>
-                    < CustomerLogos />
+
+                <div className="mt-10">
+                    <CustomerLogos />
                 </div>
             </div>
         </>

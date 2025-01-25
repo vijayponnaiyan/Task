@@ -1,17 +1,18 @@
 import React from 'react'
-import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function SignUp() {
     return (
         <>
             <div>
-                <div className=' p-5 pt-20'>
-                    <h1 className="text-center  text-white   text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight">
+                <div className='p-5 pt-20'>
+                    <h1 className="text-center text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight">
                         Sign up and try Hexnode free for 14 days!
                     </h1>
                 </div>
+
                 <div>
-                    <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-2 pt-6 ">
+                    <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-2 pt-6">
                         <input
                             type="text"
                             placeholder="Enter your email"
@@ -25,16 +26,17 @@ export default function SignUp() {
                         </button>
                     </div>
                 </div>
+
                 <div>
-                    <div className="flex justify-center items-center space-x-2 p-2">
-                        <p className="text-gray-500 text-lg">No credit cards required.</p>
+                    <div className="flex flex-wrap  justify-center items-center space-x-2 p-2">
+                        <p className="text-gray-500 text-lg w-auto">No credit cards required.</p>
                         <p
-                            className=" flex items-center text-rose-600  rounded-lg text-lg font-light transition duration-300 lg:text-xl group"
+                            className="flex items-center text-rose-600 rounded-lg text-lg font-light transition duration-300 lg:text-xl group"
                             onClick={() => toggleAccordion(index)}
                         >
                             Request a demo
                             <FaChevronRight
-                                className=" pt-1 transform transition-transform duration-300 group-hover:translate-x-2"
+                                className="pt-1 transform transition-transform duration-300 group-hover:translate-x-2"
                             />
                         </p>
                     </div>

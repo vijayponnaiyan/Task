@@ -7,16 +7,15 @@ import easy from "../../images/product/easy.webp";
 import { FaChevronRight } from "react-icons/fa6";
 import tick from '../../images/icon/ads.svg';
 
-
 export default function Main() {
-  const images = [effortless, customized, power, secure, easy]; // Images for accordion items
+  const images = [effortless, customized, power, secure, easy];
   const buttons = [
     "Hello",
     "Brand Visibility",
     "Data Security",
     "App Management",
     "Easy-to-Use Interface",
-  ]; // Buttons for accordion items
+  ];
 
   const [openIndex, setOpenIndex] = useState(0); // Default open accordion index
   const [currentImage, setCurrentImage] = useState(images[0]); // Default image
@@ -35,10 +34,13 @@ export default function Main() {
           What additional possibilities does the <br className="hidden sm:block" /> Kiosk mode offer?
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row p-6 lg:p-24">
+
+      {/* Container for image and accordion items */}
+      <div className="flex flex-col lg:flex-row p-6 lg:p-24 space-y-6 lg:space-y-0">
+        
         {/* Left Section: Image and Button */}
-        <div className="p-5 lg:w-1/2 relative ">
-          <img src={currentImage} alt="Current product " className="w-full -z-10 rounded-xl" />
+        <div className="p-5 lg:w-1/2 relative">
+          <img src={currentImage} alt="Current product" className="w-full -z-10 rounded-xl" />
           <div className="absolute top-72 right-0 transform -translate-y-1/2">
             <button
               type="button"
@@ -48,44 +50,17 @@ export default function Main() {
               <span>{currentButton}</span>
             </button>
           </div>
-
-
         </div>
 
         {/* Right Section: Accordion Items */}
-        <div className="lg:w-1/2">
-          {[
-            {
-              title: "Effortless kiosk deployment & management",
-              content:
-                "Deploy kiosk-enabled devices straight out of the box. Flash a custom Android Enterprise, Samsung Knox, or ROM with Hexnode App on the devices by collaborating with OEM vendors who provide specially configured ROMs.",
-            },
-            {
-              title: "Customized interface for brand visibility",
-              content:
-                "Create a locked-down environment with a customized interface. Maximize brand visibility and leave a lasting impression by showcasing products, services, and key messages directly to users through the customized interface.",
-            },
-            {
-              title: "What more can you do with Hexnode kiosk?",
-              content:
-                "Ensure compliance of your devices by remotely deploying the latest OS version while the device is still in kiosk mode. Prevent your data from falling into the wrong hands even in case of device loss/theft with the various remote management features.",
-            },
-            {
-              title: "Secure and update your app ecosystem",
-              content:
-                "Streamline the deployment and management on apps on your kiosk devices. Save your time and effort, ensure security, and improve your efficiency using Hexnode’s silent app installation and update features.",
-            },
-            {
-              title: "Provide an easy-to-use interface for end-users",
-              content:
-                "Give your end-users the power to control their devices without overwhelming them with options. An intuitive interface to let them access only the essential settings they need. Make it easy for them to unlock the full potential of your devices hassle-free.",
-            },
+        <div className="lg:w-1/2 space-y-6">
+          {[{ title: "Effortless kiosk deployment & management", content: "Deploy kiosk-enabled devices straight out of the box. Flash a custom Android Enterprise, Samsung Knox, or ROM with Hexnode App on the devices by collaborating with OEM vendors who provide specially configured ROMs." },
+            { title: "Customized interface for brand visibility", content: "Create a locked-down environment with a customized interface. Maximize brand visibility and leave a lasting impression by showcasing products, services, and key messages directly to users through the customized interface." },
+            { title: "What more can you do with Hexnode kiosk?", content: "Ensure compliance of your devices by remotely deploying the latest OS version while the device is still in kiosk mode. Prevent your data from falling into the wrong hands even in case of device loss/theft with the various remote management features." },
+            { title: "Secure and update your app ecosystem", content: "Streamline the deployment and management on apps on your kiosk devices. Save your time and effort, ensure security, and improve your efficiency using Hexnode’s silent app installation and update features." },
+            { title: "Provide an easy-to-use interface for end-users", content: "Give your end-users the power to control their devices without overwhelming them with options. An intuitive interface to let them access only the essential settings they need. Make it easy for them to unlock the full potential of your devices hassle-free." }
           ].map((item, index) => (
-            <div
-              key={index}
-              className={`border-gray-300 rounded-xl mb-2 ${openIndex === index ? "bg-slate-50" : ""
-                }`}
-            >
+            <div key={index} className={`border-gray-300 rounded-xl mb-2 ${openIndex === index ? "bg-slate-50" : ""}`}>
               <div
                 className="flex items-center justify-between p-5 cursor-pointer"
                 onClick={() => toggleAccordion(index)}
@@ -94,12 +69,11 @@ export default function Main() {
               </div>
 
               <div
-                className={`transition-all duration-500 ease-in-out text-lg text-gray-600 overflow-hidden ${openIndex === index ? "max-h-screen p-5" : "max-h-0 p-0"
-                  }`}
+                className={`transition-all duration-500 ease-in-out text-lg text-gray-600 overflow-hidden ${openIndex === index ? "max-h-screen p-5" : "max-h-0 p-0"}`}
               >
-                <p onClick={() => toggleAccordion(index)}>{item.content}</p>
+                <p>{item.content}</p>
                 <p
-                  className="mt-4 flex items-center  text-rose-600 py-2 px-4 rounded-lg text-lg font-medium  transition duration-300 lg:text-xl group"
+                  className="mt-4 flex items-center text-rose-600 py-2 px-4 rounded-lg text-lg font-medium transition duration-300 lg:text-xl group"
                   onClick={() => toggleAccordion(index)}
                 >
                   TRY FOR FREE
@@ -107,8 +81,6 @@ export default function Main() {
                     className="ml-2 transform transition-transform duration-300 group-hover:translate-x-2"
                   />
                 </p>
-
-
               </div>
             </div>
           ))}

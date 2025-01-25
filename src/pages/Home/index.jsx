@@ -13,7 +13,7 @@ export default function index() {
   return (
     <>
     <div className=''>
-      <div className="home-container pt-0 px-4 md:px-8 lg:px-16">
+      <div className="home-container pt-0 px-4 md:px-2 lg:px-16">
         <Banner />
         {/* Additional sections can be added here */}
       </div>

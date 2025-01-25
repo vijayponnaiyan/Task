@@ -5,7 +5,7 @@ import three from '../../images/bird-1.webp';
 
 export default function SubBanner() {
   return (
-<div className="p-7 px-9">
+<div className="p-5 px-9">
   <div className="h-auto text-center sm:px-10 md:px-16 lg:px-20 xl:px-16">
     {/* Responsive Grid Container */}
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 lg:divide-x divide-gray-700 gap-6">

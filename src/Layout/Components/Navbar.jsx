@@ -33,7 +33,7 @@ export default function Navbar() {
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
           <a
-            href="https://flowbite.com/"
+            href="#"
             className="flex items-center space-x-3 sm:pl-4 md:pl-8 lg:pl-14 rtl:space-x-reverse"
           >
             <img
@@ -94,7 +94,7 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="block focus:outline-none text-white w-full sm:w-52 md:w-64 lg:w-52 bg-rose-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-base px-6 py-3 me-2 mb-2 transition-all duration-200 transform hover:scale-105 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg"
+            className="block focus:outline-none text-white w-full sm:w-52 md:w-64 lg:w-52 bg-rose-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-base px-6 py-3 me-2 mb-2 transition-all duration-200 transform hover:scale-105 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg"
           >
             14 DAY FREE TRIAL
           </button>

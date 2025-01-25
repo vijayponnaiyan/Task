@@ -6,7 +6,7 @@ export default function Digital() {
   return (
     <>
        <div className="pl-5 pr-5 z-10">
-                  <div className="flex flex-col-reverse  sm:flex-row bg-gray-100 p-10 rounded-lg shadow-lg">
+                  <div className="flex flex-col-reverse md:flex-row bg-gray-100 p-10 rounded-lg shadow-lg">
                     {/* Text Section */}
                     <div className="flex-1 sm:pr-6 mb-6 sm:mb-0  p-1 ">
                       <h1 className="text-3xl font-semibold text-gray-800 mb-4">
