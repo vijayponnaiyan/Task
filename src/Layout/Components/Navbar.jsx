@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../images/two.PNG';
-import logo2 from '../../images/one.PNG';
+import logo from '../../images/two.PNG'; // Ensure this file exists
+import logo2 from '../../images/one.PNG'; // Ensure this file exists
 import CustomButton from '../../components/Button/CustomButton';
 
 export default function Navbar() {
@@ -42,7 +42,6 @@ export default function Navbar() {
               alt="Logo"
             />
           </a>
-
 
           <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse sm:pr-4 md:pr-8 lg:pr-14">
             <CustomButton
