@@ -6,7 +6,7 @@ import three from "../../images/logo/logo-three.svg";
 
 export default function CustomerLogos() {
   return (
-    <section className="dark:bg-gray-900 py-14 px-4 sm:px-8 md:px-16 lg:px-28">
+    <section className="bg-slate-50 py-14 px-4 sm:px-8 md:px-16 lg:px-28">
       <Slider width="100%" duration={30} pauseOnHover={true}>
         <Slider.Slide>
           <img src={one} alt="Logo One" className="h-16 sm:h-20 md:h-24" />
