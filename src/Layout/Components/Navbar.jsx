@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../images/two.png';
-import logo2 from '../../images/one.png';
+import logo from '../../images/two.PNG';
+import logo2 from '../../images/one.PNG';
 import CustomButton from '../../components/Button/CustomButton';
 
 export default function Navbar() {
