@@ -14,7 +14,7 @@ export default function Banner() {
       </h1>
   
       {/* Input and Button Section */}
-      <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 pt-6 w-full">
+      <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-2 pt-6 w-full">
         <input
           type="text"
           placeholder="Enter your email"
