@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <div className="px-6 md:px-14 py-6 flex flex-col-reverse md:flex-row items-center justify-between md:space-x-8">
     {/* Text Section */}
-    <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+    <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6" data-aos="fade-right" data-aos-duration="1000" >
       <h1
         className="text-2xl sm:text-4xl md:text-5xl font-medium text-white"
         style={{ lineHeight: "1.3" }}
@@ -33,11 +33,11 @@ export default function Banner() {
     </div>
   
     {/* Image Section */}
-    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center"   data-aos="fade-left" data-aos-duration="1000"  >
       <img
         src={banner}
         alt="Hexnode UEM banner showcasing device kiosks"
-        className="w-full md:max-w-md h-auto rounded-lg shadow-lg"
+        className="w-full md:max-w-md h-auto rounded-lg shadow-lg  delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300"
       />
     </div>
   </div>

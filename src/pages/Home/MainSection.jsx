@@ -15,7 +15,7 @@ const KioskModesAccordion = () => {
     };
 
     return (
-        <div className=' aspect-retro pt-24 bg-slate-50  h-auto  p-10'>
+        <div className=' aspect-retro pt-24 bg-slate-50  h-auto  p-10'  >
             <div>
                 <h1 className='text-center text-4xl font-semibold'>
                     Specific kiosk modes for unique use cases
@@ -23,12 +23,13 @@ const KioskModesAccordion = () => {
             </div>
 
             {/* Accordion Buttons in Flex */}
-            <div className=' flex flex-wrap justify-center   pt-20 '>
+           
+            <div className=' flex flex-wrap justify-center pt-20 '    >
                 {/* Single App Kiosk */}
                 <div className='w-full sm:w-56'>
                     <button
                         type='button'
-                        className={`border-2 w-full rounded-sm p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 0 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
+                        className={`border-2 w-full  rounded-md p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 0 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
                             }`}
                         onClick={() => toggleAccordion(0)}
                     >
@@ -44,7 +45,7 @@ const KioskModesAccordion = () => {
 
                     {/* Accordion Content */}
                     {openIndex === 0 && (
-                        <div className='absolute  left-0 w-92 bg-gray-50 transition-all duration-3000 ease-in-out flex flex-col sm:flex-row px-6 sm:px-12 lg:px-24'>
+                        <div className='absolute  left-0 w-92 bg-gray-50 transition-all duration-3000 ease-in-out flex flex-col sm:flex-row px-6 sm:px-12 lg:px-24 '>
                             {/* Text Section */}
                             <Single />
                         </div>
@@ -57,7 +58,7 @@ const KioskModesAccordion = () => {
                 <div className='w-full sm:w-56'>
                     <button
                         type='button'
-                        className={`border-2 w-full rounded-sm p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 1 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
+                        className={`border-2 w-full rounded-md p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 1 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
                             }`}
                         onClick={() => toggleAccordion(1)}
                     >
@@ -82,7 +83,7 @@ const KioskModesAccordion = () => {
                 <div className='w-full sm:w-56'>
                     <button
                         type='button'
-                        className={`border-2 w-full rounded-sm p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 2 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
+                        className={`border-2 w-full rounded-md p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 2 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
                             }`}
                         onClick={() => toggleAccordion(2)}
                     >
@@ -107,7 +108,7 @@ const KioskModesAccordion = () => {
                 <div className='w-full sm:w-56'>
                     <button
                         type='button'
-                        className={`border-2 w-full rounded-sm p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 3 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
+                        className={`border-2 w-full rounded-md p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 3 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
                             }`}
                         onClick={() => toggleAccordion(3)}
                     >
@@ -132,7 +133,7 @@ const KioskModesAccordion = () => {
                 <div className='w-full sm:w-56'>
                     <button
                         type='button'
-                        className={`border-2 w-full rounded-sm p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 4 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
+                        className={`border-2 w-full rounded-md p-6 flex items-center justify-between transition-colors duration-300 ${openIndex === 4 ? 'bg-black bg-opacity-70 text-white' : 'border-gray-300 text-gray-600'
                             }`}
                         onClick={() => toggleAccordion(4)}
                     >

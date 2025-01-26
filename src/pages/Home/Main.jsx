@@ -10,7 +10,7 @@ import tick from '../../images/icon/ads.svg';
 export default function Main() {
   const images = [effortless, customized, power, secure, easy];
   const buttons = [
-    "Hello",
+    "Effortless",
     "Brand Visibility",
     "Data Security",
     "App Management",
@@ -36,7 +36,7 @@ export default function Main() {
       </div>
 
       {/* Container for image and accordion items */}
-      <div className="flex flex-col lg:flex-row p-6 lg:p-24 space-y-6 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row p-6 lg:p-24 space-y-6 lg:space-y-0"   >
         
         {/* Left Section: Image and Button */}
         <div className="p-5 lg:w-1/2 relative">

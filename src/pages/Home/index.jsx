@@ -7,6 +7,7 @@ import Main from './Main';
 import Testimonial from './Testimonial ';
 import PlatForms from './PlatForms';
 import SignUp from './SignUp';
+import Floating from './Floating';
 
 export default function index() {
 
@@ -34,6 +35,9 @@ export default function index() {
       </div>
        <div className='bg-slate-950 px-14'>
         <SignUp/>
+       </div>
+       <div className=''>
+        <Floating/>
        </div>
       </div>
     </>
