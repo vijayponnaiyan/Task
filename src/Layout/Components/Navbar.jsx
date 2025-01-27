@@ -47,7 +47,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse sm:pr-4 md:pr-8 lg:pr-14">
             <CustomButton
               text="14 DAY FREE TRIAL"
-              onClick={() => alert("Free trial button clicked!")}
+              onClick={() => alert("Hexnode Kiosk Solution")}
               className="hidden md:block"
             />
 
