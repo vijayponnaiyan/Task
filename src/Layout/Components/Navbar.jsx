@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import logo from "../../images/two.PNG"; // Ensure this file exists
 import logo2 from "../../images/one.PNG"; // Ensure this file exists
 import CustomButton from "../../components/Button/CustomButton";
+import { ToastContainer, toast } from "react-toastify"; // Import react-toastify
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for toast notifications
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +12,10 @@ export default function Navbar() {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const notify = () => {
+    toast.success("Hexnode Kiosk Solution!"); // Show a success toast notification
   };
 
   useEffect(() => {
@@ -47,7 +53,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse sm:pr-4 md:pr-8 lg:pr-14">
             <CustomButton
               text="14 DAY FREE TRIAL"
-              onClick={() => alert("Hexnode Kiosk Solution")}
+               onClick={notify} 
               className="hidden md:block"
             />
 
@@ -107,12 +113,14 @@ export default function Navbar() {
 
           <button
             type="button"
+             onClick={notify} 
             className="block focus:outline-none text-white w-full sm:w-52 md:w-64 lg:w-52 bg-rose-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-base px-6 py-3 me-2 mb-2 transition-all duration-200 transform hover:scale-105 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 shadow-lg"
           >
             14 DAY FREE TRIAL
           </button>
         </div>
       </div>
+        <ToastContainer />
     </>
   );
 }
