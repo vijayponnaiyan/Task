@@ -52,6 +52,12 @@ Responsive design was achieved using:
 
 - Minified Tailwind CSS and JavaScript files.
 
+## Performance Optimization
+- Minimized image sizes using compression tools.
+- Used lazy loading for images and other assets.
+- Implemented code-splitting to reduce initial load times (if using React).
+- Minified CSS and JavaScript files.
+
 ## Accessibility
 - Followed WCAG guidelines for color contrast and font sizes.
 - Used ARIA roles and labels to improve screen reader support.
