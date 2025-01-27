@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   const notify = () => {
-    toast.success("Hexnode Kiosk Solution!"); // Show a success toast notification
+    toast.success("Register your Email to get a 14-day Trial."); // Show a success toast notification
   };
 
   useEffect(() => {
