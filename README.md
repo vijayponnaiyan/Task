@@ -14,7 +14,7 @@ This project is a recreation of the Hexnode Kiosk Solution webpage using React, 
 7. [Challenges Faced](#challenges-faced)
 8. [Bonus Enhancements](#bonus-enhancements)
 9. [How to Run the Project](#how-to-run-the-project)
-10.[Running Tests](#unit-test)
+10. [Running Tests](#unit-test)
 11. [Future Improvements](#future-improvements)
 
 ## Project Setup
@@ -31,6 +31,13 @@ To recreate the Hexnode Kiosk Solution page:
 - Collected required assets (images, icons, etc.) from the target page.
 
 - Ensured all code was structured for readability and scalability.
+
+
+## Technology Stack
+- **Framework:** [React/JavaScript/jQuery] (React recommended for modularity and scalability).
+- **Styling:** CSS3 with [TailwindCSS/SCSS/Vanilla CSS].
+- **Responsiveness:** CSS media queries and flexbox/grid layout.
+- **Tooling:** Webpack/Vite for bundling (if applicable).
 
 ## Responsive Design
 Responsive design was achieved using:
