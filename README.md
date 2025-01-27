@@ -42,7 +42,7 @@ To recreate the Hexnode Kiosk Solution page:
 ## Responsive Design
 Responsive design was achieved using:
 - **CSS Flexbox and Grid:** Ensured a flexible and adaptive layout.
-- **Media Queries:** Adjusted styles for various breakpoints (mobile: < 360px . lates mobil: < 425  , tablet: < 768px, desktop: < 1024px).
+- **Media Queries:** Adjusted styles for various breakpoints (mobile: < 360px . lates mobile: < 425  , tablet: < 768px, desktop: < 1024px).
 - **Responsive Images:** Used `srcset` for images and optimized assets.
  Performance Optimization
 
