@@ -1,6 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 
-function Slider({ children, width = "800px", duration = 40, pauseOnHover = false }) {
+function Slider({
+  children,
+  width = "800px",
+  duration = 40,
+  pauseOnHover = false,
+}) {
   const trackRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 

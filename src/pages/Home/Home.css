@@ -1,25 +1,24 @@
 @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .slider {
-    overflow: hidden;
-    position: relative;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .slide-track {
-    display: flex;
-    white-space: nowrap;
-  }
-  
-  .slide {
-    flex-shrink: 0;
-    width: 250px;
-    height: 100px;
-  }
-  
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 250px;
+  height: 100px;
+}

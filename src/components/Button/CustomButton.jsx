@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const CustomButton = ({ text, onClick, className }) => {
   return (
@@ -9,7 +9,6 @@ const CustomButton = ({ text, onClick, className }) => {
     >
       {text}
     </button>
-
   );
 };
 

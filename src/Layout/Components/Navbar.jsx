@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../../images/two.PNG'; // Ensure this file exists
-import logo2 from '../../images/one.PNG'; // Ensure this file exists
-import CustomButton from '../../components/Button/CustomButton';
+import React, { useState, useEffect } from "react";
+import logo from "../../images/two.PNG"; // Ensure this file exists
+import logo2 from "../../images/one.PNG"; // Ensure this file exists
+import CustomButton from "../../components/Button/CustomButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,17 +17,18 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 50); // Adjust the value as needed
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
       <nav
-        className={`fixed w-full z-20 top-0 start-0  border-gray-200 dark:border-gray-600 p-0 transition-all duration-300 ${isHovered || isScrolled ? 'bg-white' : 'bg-transparent'
-          }`}
+        className={`fixed w-full z-20 top-0 start-0  border-gray-200 dark:border-gray-600 p-0 transition-all duration-300 ${
+          isHovered || isScrolled ? "bg-white" : "bg-transparent"
+        }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -46,7 +47,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse sm:pr-4 md:pr-8 lg:pr-14">
             <CustomButton
               text="14 DAY FREE TRIAL"
-              onClick={() => alert('Free trial button clicked!')}
+              onClick={() => alert("Free trial button clicked!")}
               className="hidden md:block"
             />
 
@@ -73,12 +74,13 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-
         </div>
       </nav>
 
       <div
-        className={`fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-900 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 shadow-lg border-l border-gray-200 dark:border-gray-700 z-30`}
+        className={`fixed top-0 right-0 w-64 h-full bg-white dark:bg-gray-900 transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 shadow-lg border-l border-gray-200 dark:border-gray-700 z-30`}
       >
         <div className="p-6">
           <button
@@ -86,8 +88,19 @@ export default function Navbar() {
             onClick={toggleSidebar}
             aria-label="Close sidebar"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
           </button>
           <br />
@@ -98,7 +111,6 @@ export default function Navbar() {
           >
             14 DAY FREE TRIAL
           </button>
-
         </div>
       </div>
     </>
